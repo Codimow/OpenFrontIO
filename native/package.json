@@ -1,0 +1,16 @@
+{
+  "name": "openfront-native",
+  "version": "0.1.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "openfront-native",
+    "package": {
+      "name": "openfront-native"
+    }
+  },
+  "scripts": {
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform"
+  }
+}

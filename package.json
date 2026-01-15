@@ -1,6 +1,8 @@
 {
   "name": "openfront-client",
   "scripts": {
+    "build:native": "cd native && npm run build",
+    "build:native-dev": "cd native && npm run build:debug",
     "build-dev": "concurrently \"tsc --noEmit\" \"vite build --mode development\"",
     "build-prod": "concurrently --kill-others-on-fail \"tsc --noEmit\" \"vite build\"",
     "start:client": "vite",
@@ -32,6 +34,7 @@
     "@datastructures-js/priority-queue": "^6.3.3",
     "@eslint/compat": "^1.2.7",
     "@eslint/js": "^9.21.0",
+    "@napi-rs/cli": "^3.5.1",
     "@tailwindcss/vite": "^4.1.18",
     "@types/benchmark": "^2.1.5",
     "@types/chai": "^4.3.17",
